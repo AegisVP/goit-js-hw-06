@@ -4,7 +4,7 @@ const bgColorDisplayEl = document.querySelector(".color");
 const changeColorButtonEl = document.querySelector(".change-color");
 
 let bgColor = "#FFFFFF";
-changeColorButtonEl.addEventListener('click', updateBackgroundColor);
+changeColorButtonEl.addEventListener("click", updateBackgroundColor);
 
 function getRandomHexColor() {
 	return `#${Math.floor(Math.random() * 16777215)
@@ -13,7 +13,7 @@ function getRandomHexColor() {
 }
 
 function updateBackgroundColor() {
-  const newColor = getRandomHexColor();
+	const newColor = getRandomHexColor();
 	document.body.style.backgroundColor = newColor;
 	bgColorDisplayEl.textContent = newColor;
 }

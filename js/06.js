@@ -1,8 +1,8 @@
 // #region Завдання 6
 console.log("Section 6 start");
-const inputEl = document.getElementById('validation-input');
+const inputEl = document.getElementById("validation-input");
 const minLength = inputEl.dataset.length;
-  console.log("minLength", minLength);
+console.log("minLength", minLength);
 
 inputEl.addEventListener("blur", validateInputLength);
 
@@ -18,8 +18,6 @@ function validateInputLength() {
 	if (!inputEl.classList.contains("invalid")) inputEl.classList.add("invalid");
 }
 
-
 console.log("Section 6 end");
 console.log("--------------------------");
 // #endregion
-

@@ -13,12 +13,12 @@ function validateFormSubmit(form) {
 	for (const child of formEl.querySelectorAll("input")) {
 		console.log(`${child?.name} = "${child?.value}"`);
 
-    if (!child?.value) {
-      window.alert("All fields must be filled out!");
-      return;
-    } else {
-      returnUser[child.name] = child?.value;
-    }
+		if (!child?.value) {
+			window.alert("All fields must be filled out!");
+			return;
+		} else {
+			returnUser[child.name] = child?.value;
+		}
 	}
 
 	console.log(returnUser);

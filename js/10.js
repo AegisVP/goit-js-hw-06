@@ -22,19 +22,19 @@ function onCreateButtonClick() {
 		return;
 	}
 
-  if (boxesContainerEl.children.length > 0) {
-    window.alert("boxes are already populated");
-    return;
-  }
+	if (boxesContainerEl.children.length > 0) {
+		window.alert("boxes are already populated");
+		return;
+	}
 
-  boxesContainerEl.insertAdjacentHTML('beforeend',  createBoxes(numberOfBoxes));
+	boxesContainerEl.insertAdjacentHTML("beforeend", createBoxes(numberOfBoxes));
 }
 
 function createBoxes(number) {
 	let boxesMarkup = "";
 	for (let i = 0; i < number; i += 1) {
 		const boxSize = SIZE_START + SIZE_CHANGE * i;
-    const hex = getRandomHexColor();
+		const hex = getRandomHexColor();
 
 		boxesMarkup += `
 				<div class="box-container">${i + 1}<div class="box-item" style="width:${boxSize}px;height:${boxSize}px;background-color:${hex}"></div>${hex}<br>${boxSize}px</div>`;
@@ -43,7 +43,7 @@ function createBoxes(number) {
 }
 
 function onDestroyButtonClick() {
-  boxesContainerEl.replaceChildren();
+	boxesContainerEl.replaceChildren();
 }
 
 function getRandomHexColor() {
