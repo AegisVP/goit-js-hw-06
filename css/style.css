@@ -30,3 +30,13 @@ body {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+.box-container {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.box-item {
+  margin: 5px;
+}

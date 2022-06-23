@@ -6,7 +6,7 @@ const outputEl = document.getElementById("name-output");
 inputEl.addEventListener("input", updateOutputEl);
 
 function updateOutputEl() {
-	outputEl.textContent = inputEl.value == null ? "Anonymous" : inputEl.value;
+	outputEl.textContent = inputEl.value.length === 0 ? "Anonymous" : inputEl.value;
 }
 
 // console.log("Section 5 end");
