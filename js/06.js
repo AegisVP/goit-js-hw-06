@@ -8,7 +8,7 @@ inputEl.addEventListener("blur", validateInputLength);
 
 function validateInputLength() {
 	console.log("inputEl.value.length", inputEl.value.length);
-	if (inputEl.value.length >= minLength) {
+	if (inputEl.value.length === minLength) {
 		if (inputEl.classList.contains("invalid")) inputEl.classList.remove("invalid");
 		if (!inputEl.classList.contains("valid")) inputEl.classList.add("valid");
 		return;
